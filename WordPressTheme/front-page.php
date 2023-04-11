@@ -39,7 +39,7 @@
 						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/top_ballet.png" alt="">
 					</div>
 					<div class="service__text">
-						<h2 class="h2_yuminscho">バレエレッスン</h2>
+						<h2 class="h2_yuminscho">あバレエレッスン</h2>
 					<p>
 					バレエが初めての方でも経験者でも、性別・ジェンダー問わずどなたでも参加大歓迎！<br>
 					従来のバレエのように性別で役割を決めつけることはせず、自身の表現したいままに踊れるバレエレッスンです。
