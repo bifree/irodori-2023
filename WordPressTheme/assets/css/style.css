@@ -314,3 +314,25 @@ input[type="checkbox"]:disabled + span::before {
 
 /* placeholder */
 
+.header {
+	background: #fff;
+	display: flex;
+	height: 95px;
+	justify-content: space-between;
+	left: 0;
+	position: fixed;
+	right: 0;
+	width: 100%;
+	z-index: 99;
+}
+
+.header__logo {
+	height: 100px;
+	margin-left: 45px;
+	width: 200px;
+}
+
+.header__logo img {
+	width: 100%;
+}
+
