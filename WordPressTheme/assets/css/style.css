@@ -314,250 +314,393 @@ input[type="checkbox"]:disabled + span::before {
 
 /* placeholder */
 
-* {
-	box-sizing: border-box;
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	background: transparent;
+	border: 0;
+	font-size: 100%;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
 }
 
 body {
-	color: #333;
-	font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3","游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic","メイリオ", "Meiryo", "verdana", sans-serif;
-	font-size: 16px;
-	line-height: 2;
-	min-width: 1140px;
+	line-height: 1;
 }
 
-a {
-	display: inline-block;
-	text-decoration: none;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
 }
 
-a:hover {
-	opacity: 0.7;
-}
-
-li {
+nav ul {
 	list-style: none;
 }
 
-img {
-	vertical-align: bottom;
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+a {
+	background: transparent;
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+/* change colours to suit your needs */
+
+ins {
+	background-color: #ff9;
+	color: #000;
+	text-decoration: none;
+}
+
+/* change colours to suit your needs */
+
+mark {
+	background-color: #ff9;
+	color: #000;
+	font-style: italic;
+	font-weight: bold;
+}
+
+del {
+	text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+	border-bottom: 1px dotted;
+	cursor: help;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+
+hr {
+	border: 0;
+	border-top: 1px solid #cccccc;
+	display: block;
+	height: 1px;
+	margin: 1em 0;
+	padding: 0;
+}
+
+input,
+select {
+	vertical-align: middle;
+}
+
+.footer {
+	margin: 0 auto;
+	max-width: 1080px;
+}
+
+.footer__box {
+	background-color: #6ac7fa;
+	padding-bottom: 48px;
+}
+
+#footer {
+	color: #ffffff;
+	display: flex;
+	justify-content: space-between;
+	max-width: 100%;
+	padding-top: 60px;
+}
+
+#footer ul {
+	list-style: none;
+}
+
+#footer ul li a {
+	position: relative;
+}
+
+#footer ul li a:after {
+	background: #fff;
+	bottom: -4.5px;
+	content: "";
+	height: 1px;
+	left: 0;
+	position: absolute;
+	transition: all 0.3s;
+	width: 0%;
+}
+
+#footer ul li a:after:hover {
 	width: 100%;
 }
 
-.sp-br {
-	display: none;
+#footer #footer a {
+	color: #ffffff;
+	text-decoration: none;
 }
 
-.container {
-	margin: 0 auto;
-	padding: 50px 10px;
-	width: 1140px;
-}
-
-.sentence {
-	margin: 0 auto;
-	max-width: 800px;
-}
-
-#fascia,
-#voice,
-#suitable,
-#profile-thought,
-#select,
-#treatment {
-	margin-top: -95px;
-	padding-top: 95px;
-}
-
-.sec-title {
-	color: #3D71B8;
-	font-size: 36px;
-	margin-bottom: 50px;
-	padding-bottom: 20px;
-	position: relative;
-	text-align: center;
-}
-
-.sec-title,
-.pc-menu,
-.sp-menu {
-	font-family: "ヒラギノ明朝 ProN W3","Hiragino Mincho ProN","游明朝","YuMincho","HG明朝E","ＭＳ Ｐ明朝","ＭＳ 明朝", 'Noto Serif JP', serif;
-}
-
-.sec-title:before {
-	background: red;
-	bottom: 0px;
-	content: '';
-	height: 3px;
-	left: calc(50% - 200px);
-	opacity: 0.8;
-	position: absolute;
-	width: 400px;
-}
-
-.red {
-	color: red;
-	font-weight: bold;
-}
-
-.yellow {
-	color: yellow;
-	font-weight: bold;
-}
-
-.marker-blue {
-	background: linear-gradient(transparent 60%, blue 0%);
-	padding-bottom: 2px;
-}
-
-.marker-yellow {
-	background: linear-gradient(transparent 60%, yellow 0%);
-	padding-bottom: 2px;
-}
-
-.size-big {
-	font-size: 20px;
-	font-weight: bold;
-	padding: 10px 0;
-}
-
-.title-big {
-	font-size: 46px;
-	font-weight: bold;
-	padding: 10px 0;
-}
-
-header {
+.header {
 	background: #fff;
-	box-shadow: 0px 1px rgba(195, 195, 195, 0.2);
+	display: flex;
+	height: 95px;
+	justify-content: space-between;
 	left: 0;
-	margin: 0 auto;
 	position: fixed;
 	right: 0;
-	top: 0%;
-	z-index: 6;
+	width: 100%;
+	z-index: 99;
 }
 
-.l-header .header-top {
-	align-items: center;
-	display: flex;
-	height: 65px;
-	justify-content: space-between;
+.header__logo {
+	height: 100px;
+	margin-left: 45px;
+	width: 200px;
+}
+
+.header__logo a img {
+	width: 100%;
+}
+
+.service__container {
+	line-height: 2;
 	margin: 0 auto;
-	padding: 0 10px;
-	width: 1140px;
+	max-width: 1080px;
+	padding: 0 25px;
 }
 
-.l-header .header-top .header-top__left .left__logo img {
-	height: 48px;
-}
-
-.l-header .header-top .header-top__right {
-	display: flex;
-}
-
-.l-header .header-top .header-top__right .right__tel {
-	line-height: 23px;
-	margin-right: 50px;
-}
-
-.l-header .header-top .header-top__right .right__tel .right__tel__btn {
-	display: flex;
-}
-
-.l-header .header-top .header-top__right .right__tel .right__tel__btn .fa-phone-square-alt {
-	color: #36A3D5;
-	font-size: 50px;
-	margin-right: 10px;
-}
-
-.l-header .header-top .header-top__right .right__tel .right__tel__btn .right__tel__time {
-	color: #333;
-	font-size: 12px;
+.service__title {
+	font-size: 60px;
 	font-weight: bold;
-}
-
-.l-header .header-top .header-top__right .right__tel .right__tel__btn .right__tel__number {
-	color: #36A3D5;
-	font-size: 25px;
-	font-weight: bold;
-}
-
-.l-header .header-top .header-top__right .right__mail__btn {
-	background: orange;
-	border-radius: 4px;
-	box-shadow: 2px 2px rgba(195, 195, 195, 0.2);
-	color: #fff;
-	display: inline-block;
-	font-size: 16px;
-	font-weight: bold;
-	margin-top: 3px;
-	padding: 7px 15px;
-}
-
-.l-header .pc-menu {
-	align-items: center;
-	height: 30px;
-	margin: 0 auto;
-	width: 1140px;
-}
-
-.l-header .pc-menu .pc-menu__list {
-	display: flex;
-}
-
-.l-header .pc-menu .pc-menu__list .pc-menu__list__item {
-	border-left: solid 1px #c3c3c3;
-	display: inline-block;
-	font-size: 14px;
+	margin: 150px 0 50px;
 	text-align: center;
-	width: calc(100% / 7);
 }
 
-.l-header .pc-menu .pc-menu__list .pc-menu__list__item a {
-	color: #3D71B8;
+.service__bold {
+	font-weight: bold;
 }
 
-.l-header .pc-menu .pc-menu__list .pc-menu__list__item:last-child {
-	border-right: solid 1px #c3c3c3;
+.service__pink {
+	color: #EC6D74;
 }
 
-.l-header .sp-menu,
-.l-header .sp-menu-btn {
-	display: none;
-}
-
-.lp-top .lp-top__cp {
-	margin-top: 95px;
+.service__voice__title,
+.service__flow__title {
+	align-items: center;
+	background: #EC6D74;
+	color: #fff;
+	display: flex;
+	font-size: 22px;
+	height: 50px;
+	justify-content: center;
+	margin-bottom: 50px;
 	width: 100%;
 }
 
-.lp-top .lp-top__sp {
-	display: none;
+.shopping__top {
+	display: flex;
 }
 
-@media screen and (max-width: 599px) {
+.shopping__top__text {
+	padding-right: 20px;
+	width: 50%;
+}
 
-.l-header .header-top {
-	box-shadow: 0px 1px rgba(195, 195, 195, 0.2);
-	height: 60px;
+.shopping__top__img img {
+	width: 100%;
+}
+
+.shopping__list {
+	margin: 30px 0 85px;
+}
+
+.shopping__list__title {
+	color: #EC6D74;
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.shopping__list__items {
+	border: 2px solid #EC6D74;
+	font-size: 14px;
 	padding: 10px;
-	width: 100%;
 }
 
-.l-header .header-top .header-top__right {
+.shopping__course1__title,
+.shopping__course2__title {
+	border-bottom: 2px solid #EC6D74;
+	font-weight: bold;
+}
+
+.shopping__course2__title {
+	margin-top: 10px;
+}
+
+.header .sp-menu {
 	display: none;
 }
 
-.lp-top .lp-top__cp {
-	display: none;
+.header .top--menu {
+	width: 70%;
 }
 
-.lp-top .lp-top__sp {
+.header .top--menu nav ul {
+	display: flex;
+	justify-content: space-around;
+	list-style: none;
+}
+
+.header .top--menu nav ul li.sub--menu {
+	position: relative;
+}
+
+.header .top--menu nav ul li.sub--menu a img {
+	height: 7px;
+	padding: 0 0 1px 1px;
+	width: 13px;
+}
+
+.header .top--menu nav ul li.sub--menu .submenu {
+	display: none;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	top: 65px;
+	z-index: 1;
+}
+
+.header .top--menu nav ul li:hover ul.submenu {
 	display: block;
-	margin-top: 60px;
-	width: 100%;
 }
 
+.contact {
+	background-color: #555;
+	color: #fff !important;
+	cursor: pointer;
+	height: 40px;
+	line-height: 40px;
+	margin-top: 30px;
+	overflow: hidden;
+	text-align: center;
+	width: 150px;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+a {
+	text-decoration: none;
+}
+
+textarea {
+	border: #555 1px solid;
+	border-radius: 5px;
+	font-size: 140%;
+	height: 300px;
+	margin-bottom: 60px;
+	width: 520px;
+}
+
+label {
+	font-size: 16px;
+	line-height: 29px;
 }
 

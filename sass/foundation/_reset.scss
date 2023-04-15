@@ -1,116 +1,102 @@
-*{
-  box-sizing: border-box;
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
 }
 
-body{
-  font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3","游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic","メイリオ", "Meiryo", "verdana", sans-serif;
-  color:#333;
-  font-size:16px;
-  line-height:2;
-  min-width:1140px;
+body {
+    line-height:1;
 }
 
-a{
-  text-decoration:none;
-  display:inline-block;
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
 }
 
-a:hover{
-  opacity:0.7;
+nav ul {
+    list-style:none;
 }
 
-li{
-  list-style:none;
+blockquote, q {
+    quotes:none;
 }
 
-img{
-  width:100%;
-  vertical-align:bottom;
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
 }
 
-.sp-br{
-  display:none;
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
 }
 
-.container{
-  width:1140px;
-  margin:0 auto;
-  padding:50px 10px;
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
 }
 
-.sentence{
-  max-width:800px;
-  margin:0 auto;
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
 }
 
-#fascia,#voice,#suitable,#profile-thought,#select,#treatment{
-  margin-top:-95px;
-  padding-top:95px;
+del {
+    text-decoration: line-through;
 }
 
-.sec-title{
-  font-size:36px;
-  text-align:center;
-  color:#3D71B8;
-  padding-bottom:20px;
-  margin-bottom:50px;
-  position:relative;
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
 }
 
-.sec-title,.pc-menu,.sp-menu{
-  font-family:"ヒラギノ明朝 ProN W3","Hiragino Mincho ProN","游明朝","YuMincho","HG明朝E","ＭＳ Ｐ明朝","ＭＳ 明朝", 'Noto Serif JP', serif;
+table {
+    border-collapse:collapse;
+    border-spacing:0;
 }
 
-.sec-title:before {
-  position: absolute;
-  bottom:0px;
-  left: calc(50% - 200px);
-  width: 400px;
-  height:3px;
-  content: '';
-  background:red;
-  opacity:0.8;
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
 }
 
-.red{
-  color:red;
-  font-weight:bold;
-}
-
-.yellow{
-  color:yellow;
-  font-weight:bold;
-}
-
-.marker-blue{
-  background: linear-gradient(transparent 60%, blue 0%);
-  padding-bottom:2px
-}
-
-.marker-yellow{
-  background: linear-gradient(transparent 60%, yellow 0%);
-  padding-bottom:2px
-}
-
-.size-big{
-  font-size:20px;
-  padding:10px 0;
-  font-weight:bold;
-}
-
-.title-big{
-  font-size:46px;
-  padding:10px 0;
-  font-weight:bold;
-}
-
-header{
-  background:#fff;
-  margin:0 auto;
-  position:fixed;
-  top:0%;
-  left:0;
-  right:0;
-  box-shadow:0px 1px rgba(195,195,195,0.2);
-  z-index:6;
+input, select {
+    vertical-align:middle;
 }

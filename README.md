@@ -1,3 +1,8 @@
+# リポジトリ修正上のルール
+- 1.必ずコードを最新化する。＜git pull origin develop＞
+- 2.作業ブランチを作る。＜git checkout -b develop-作業者名-項番＞
+- 3.PRを作る際は、タイトルに時刻を入力し、本文に概要を記す。
+
 # wp-flocss-rem-fromPCの使い方
 
 
