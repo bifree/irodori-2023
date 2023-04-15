@@ -8,12 +8,63 @@
 	right:0;
 	z-index:99;
 	background:#fff;
-    &__logo {
-        margin-left:45px;
-        height: 100px;
-        width: 200px;
-        img {
-            width: 100%;
+  &__logo {
+      margin-left:45px;
+      height: 100px;
+      width: 200px;
+      a {
+          img {
+          width: 100%;
+          }
+      }
+  }
+  .sp-menu {
+      display: none;
+  }
+  .top--menu {
+    width: 70%;
+    nav {
+      ul {
+        display: flex;
+        list-style: none;
+        justify-content: space-around;
+        li.sub--menu {
+          position: relative;
+          a {
+            img {
+              width:13px;
+              height:7px;
+              padding:0 0 1px 1px;
+            }
+          }
+          .submenu {
+            display: block;
+            position: absolute;
+            top: 65px;
+            left: 0;
+            overflow: hidden;
+            display: none;
+            z-index: 1;
+          }
         }
+        li:hover {
+          ul.submenu {
+            display: block;
+          }
+        }
+      }
     }
+  }
+}
+
+.contact {
+  background-color: #555;
+  color: #fff !important;
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+  margin-top: 30px;
+  overflow: hidden;
+  text-align: center;
+  cursor: pointer;
 }
