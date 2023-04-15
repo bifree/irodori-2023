@@ -491,6 +491,52 @@ select {
 	vertical-align: middle;
 }
 
+.footer {
+	margin: 0 auto;
+	max-width: 1080px;
+}
+
+.footer__box {
+	background-color: #6ac7fa;
+	padding-bottom: 48px;
+}
+
+#footer {
+	color: #ffffff;
+	display: flex;
+	justify-content: space-between;
+	max-width: 100%;
+	padding-top: 60px;
+}
+
+#footer ul {
+	list-style: none;
+}
+
+#footer ul li a {
+	position: relative;
+}
+
+#footer ul li a:after {
+	background: #fff;
+	bottom: -4.5px;
+	content: "";
+	height: 1px;
+	left: 0;
+	position: absolute;
+	transition: all 0.3s;
+	width: 0%;
+}
+
+#footer ul li a:after:hover {
+	width: 100%;
+}
+
+#footer #footer a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
 .header {
 	background: #fff;
 	display: flex;
@@ -538,7 +584,6 @@ select {
 }
 
 .header .top--menu nav ul li.sub--menu .submenu {
-	display: block;
 	display: none;
 	left: 0;
 	overflow: hidden;
