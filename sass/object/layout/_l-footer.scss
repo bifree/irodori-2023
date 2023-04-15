@@ -1,0 +1,39 @@
+.footer {
+	max-width: 1080px;
+	margin: 0 auto;
+    &__box {
+        background-color: rgb(106, 199, 250);
+        padding-bottom: 48px;
+    }
+}
+
+#footer {
+	padding-top: 60px;
+	color: #ffffff;
+	display: flex;
+	justify-content: space-between;
+	max-width:100%;
+    ul{
+        list-style: none;
+        li a{
+            position:relative;
+            &:after{
+                position:absolute;
+                content:"";
+                bottom:-4.5px;
+                left:0;
+                width:0%;
+                height:1px;
+                background:#fff;
+                transition:all 0.3s;
+                &:hover {
+                    width: 100%;
+                } 
+            }
+        }
+    }
+    #footer a{
+        color: #ffffff;
+        text-decoration: none;
+    }
+}

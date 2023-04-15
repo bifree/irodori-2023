@@ -314,6 +314,229 @@ input[type="checkbox"]:disabled + span::before {
 
 /* placeholder */
 
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	background: transparent;
+	border: 0;
+	font-size: 100%;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+body {
+	line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+nav ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+a {
+	background: transparent;
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+/* change colours to suit your needs */
+
+ins {
+	background-color: #ff9;
+	color: #000;
+	text-decoration: none;
+}
+
+/* change colours to suit your needs */
+
+mark {
+	background-color: #ff9;
+	color: #000;
+	font-style: italic;
+	font-weight: bold;
+}
+
+del {
+	text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+	border-bottom: 1px dotted;
+	cursor: help;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+
+hr {
+	border: 0;
+	border-top: 1px solid #cccccc;
+	display: block;
+	height: 1px;
+	margin: 1em 0;
+	padding: 0;
+}
+
+input,
+select {
+	vertical-align: middle;
+}
+
+.footer {
+	margin: 0 auto;
+	max-width: 1080px;
+}
+
+.footer__box {
+	background-color: #6ac7fa;
+	padding-bottom: 48px;
+}
+
+#footer {
+	color: #ffffff;
+	display: flex;
+	justify-content: space-between;
+	max-width: 100%;
+	padding-top: 60px;
+}
+
+#footer ul {
+	list-style: none;
+}
+
+#footer ul li a {
+	position: relative;
+}
+
+#footer ul li a:after {
+	background: #fff;
+	bottom: -4.5px;
+	content: "";
+	height: 1px;
+	left: 0;
+	position: absolute;
+	transition: all 0.3s;
+	width: 0%;
+}
+
+#footer ul li a:after:hover {
+	width: 100%;
+}
+
+#footer #footer a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
 .header {
 	background: #fff;
 	display: flex;
@@ -332,7 +555,78 @@ input[type="checkbox"]:disabled + span::before {
 	width: 200px;
 }
 
-.header__logo img {
+.header__logo a img {
 	width: 100%;
+}
+
+.header .sp-menu {
+	display: none;
+}
+
+.header .top--menu {
+	width: 70%;
+}
+
+.header .top--menu nav ul {
+	display: flex;
+	justify-content: space-around;
+	list-style: none;
+}
+
+.header .top--menu nav ul li.sub--menu {
+	position: relative;
+}
+
+.header .top--menu nav ul li.sub--menu a img {
+	height: 7px;
+	padding: 0 0 1px 1px;
+	width: 13px;
+}
+
+.header .top--menu nav ul li.sub--menu .submenu {
+	display: none;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	top: 65px;
+	z-index: 1;
+}
+
+.header .top--menu nav ul li:hover ul.submenu {
+	display: block;
+}
+
+.contact {
+	background-color: #555;
+	color: #fff !important;
+	cursor: pointer;
+	height: 40px;
+	line-height: 40px;
+	margin-top: 30px;
+	overflow: hidden;
+	text-align: center;
+	width: 150px;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+a {
+	text-decoration: none;
+}
+
+textarea {
+	border: #555 1px solid;
+	border-radius: 5px;
+	font-size: 140%;
+	height: 300px;
+	margin-bottom: 60px;
+	width: 520px;
+}
+
+label {
+	font-size: 16px;
+	line-height: 29px;
 }
 
